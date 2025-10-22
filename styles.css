@@ -1,1 +1,115 @@
 /* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  width: 100%;
+}
+
+footer .content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .logo_name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+footer .media-icons a {
+  color: #fff;
+  background: #222;
+  margin: 0 5px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer .media-icons a:hover {
+  background: #00bcd4;
+}
+
+.link-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.link-boxes .box {
+  list-style: none;
+  width: 180px;
+}
+
+.link-boxes .link_name {
+  font-size: 18px;
+  color: #00bcd4;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.link-boxes li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.link-boxes li a:hover {
+  color: #00bcd4;
+}
+
+.bottom-details {
+  width: 100%;
+  background: #0e0e0e;
+  text-align: center;
+  padding: 15px 10px;
+  border-top: 1px solid #333;
+}
+
+.bottom_text {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.bottom_text a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.bottom_text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  footer .top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .link-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-boxes .box {
+    margin: 15px 0;
+  }
+}
